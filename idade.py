@@ -1,8 +1,10 @@
 
 import datetime as dt
 
-mes = input("Digite o mês de seu nascimento: ")
-ano = input("Digite o ano de seu nascimento: ")
+mes = int(input("Digite o mês de seu nascimento: "))
+ano = int(input("Digite o ano de seu nascimento: "))
 
 today = dt.datetime.now()
-print(today.year)
+#print(today.year)
+idade_anos = today.year - ano
+print("Sua idade é:", idade_anos)
